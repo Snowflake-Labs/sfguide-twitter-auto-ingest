@@ -1,6 +1,8 @@
 
 
-# Demo: Auto-Ingest Twitter Data into Snowflake
+# Snowflake Guide: Auto-Ingest Twitter Data into Snowflake
+
+## ➡️ Complete this end-to-end tutorial on [guides.snowflake.com](https://guides.snowflake.com/guide/Auto-Ingest_Twitter_Data_into_Snowflake/)
 
 This demo shows how to auto-ingest streaming and event-driven data from Twitter into Snowflake using Snowpipe.  By completing this demo you will have built a docker image containing a python application that listens and saves live tweets; those tweets are uploaded into Snowflake using AWS S3 as a file stage.
 
