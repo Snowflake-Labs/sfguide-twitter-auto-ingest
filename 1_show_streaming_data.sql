@@ -21,7 +21,7 @@ select count(*) from tweets;
 select * from tweets limit 100;
 
 /*********************************************************************************
-Create a flat view to be used in Tableau
+Create a structured view of the semi-structured JSON data
 *********************************************************************************/
 
 create or replace view tweets_bi as
@@ -52,7 +52,6 @@ create or replace view tweets_bi as
 
 /*********************************************************************************
 Check content of the tweets view - run multiple times to highlight auto-ingest
-...or switch to the Tableau dashboard and see new data coming in....
 *********************************************************************************/
 
 select count(*) from tweets_bi;

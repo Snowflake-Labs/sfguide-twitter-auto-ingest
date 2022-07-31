@@ -26,6 +26,23 @@ __email__ = "developers@snowflake.com"
 __status__ = "Prototype"
 
 
+
+##############
+# KEYS
+##############
+#get your Twitter API Key and Secret https://developer.twitter.com/en/apply-for-access
+consumer_key = "*************************"
+consumer_secret = "**************************************************"
+# get your Twitter Access Token and Secret https://developer.twitter.com/en/apply-for-access
+access_token = "**************************************************"
+access_token_secret = "*********************************************"
+#AWS bucket name
+bucket = "my-twitter-bucket"
+# specify your own default twitter keyword here. 
+keyword = "#covid"
+
+
+
 def consumer():
     tweet_list = []
     total_count = 0
@@ -72,13 +89,6 @@ class JSONStreamProducer(tweepy.StreamListener):
 
 
 if __name__ == "__main__":
-    consumer_key = sys.argv[1]
-    consumer_secret = sys.argv[2]
-    access_token = sys.argv[3]
-    access_token_secret = sys.argv[4]
-    bucket = sys.argv[5]
-    keyword = "#" + sys.argv[6]
-
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
 
